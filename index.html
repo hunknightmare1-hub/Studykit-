@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="StudyKit — clear, student-friendly study notes and downloadable PDFs.">
+  <title>StudyKit | Study Smarter</title>
+  <style>
+    :root{--blue:#2457d6;--navy:#14213d;--ink:#243047;--muted:#68758b;--bg:#f5f8ff;--line:#e5eaf4}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:white;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+    header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0}
+    nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-size:1.45rem;font-weight:850;color:var(--navy);letter-spacing:-.6px}.brand span{color:var(--blue)}
+    .navlinks{display:flex;gap:24px;color:var(--muted);font-size:.95rem}
+    .btn{display:inline-block;background:var(--blue);color:white;padding:12px 19px;border-radius:11px;font-weight:700;border:0}
+    .hero{background:linear-gradient(135deg,#eef4ff,#f9fbff);padding:76px 0 68px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+    .eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem}
+    h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.06;letter-spacing:-2px;color:var(--navy);margin:14px 0}
+    h2{font-size:2rem;letter-spacing:-.7px;color:var(--navy);margin:0 0 10px}
+    .lead{font-size:1.13rem;color:var(--muted);max-width:580px}
+    .hero-card{background:white;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 18px 50px #17356b12}
+    .book{height:185px;border-radius:16px;background:linear-gradient(145deg,#2457d6,#7aa4ff);display:flex;align-items:center;justify-content:center;color:white;font-size:2.2rem;font-weight:850;letter-spacing:-1px}
+    section{padding:66px 0}.section-intro{color:var(--muted);margin:0 0 28px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:17px;padding:22px;background:#fff}
+    .tag{display:inline-block;background:#edf3ff;color:var(--blue);font-size:.78rem;font-weight:800;padding:5px 10px;border-radius:30px}
+    .card h3{margin:13px 0 5px;color:var(--navy)}.card p{color:var(--muted);font-size:.94rem;min-height:48px}
+    .price{font-weight:850;font-size:1.25rem;margin:14px 0}
+    .buy{display:block;text-align:center;background:var(--blue);color:white;padding:11px;border-radius:10px;font-weight:750}
+    .buy.disabled{background:#aab6cc;cursor:not-allowed}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{background:var(--bg);padding:22px;border-radius:15px}.step b{color:var(--blue);font-size:1.1rem}
+    .contact{background:var(--navy);color:white;border-radius:22px;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .contact p{color:#d1dbef;margin-bottom:0}
+    footer{padding:26px 0;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
+    .notice{font-size:.85rem;color:var(--muted);margin-top:16px}
+    @media(max-width:760px){.hero-grid,.cards,.steps{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:54px 0}.contact{display:block}.contact .btn{margin-top:18px}}
+  </style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+  <a class="brand" href="#">Study<span>Kit</span></a>
+  <div class="navlinks"><a href="#notes">Study notes</a><a href="#how">How it works</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+  <a class="btn" href="#notes">Browse PDFs</a>
+</nav></div></header>
+
+<main>
+  <section class="hero"><div class="wrap hero-grid">
+    <div><div class="eyebrow">Make learning simpler</div>
+      <h1>Study smarter.<br>Feel prepared.</h1>
+      <p class="lead">Student-friendly study notes and downloadable PDFs to help you revise, understand key topics and prepare with confidence.</p>
+      <a class="btn" href="#notes">Explore study notes</a>
+    </div>
+    <div class="hero-card"><div class="book">StudyKit</div><p><b>Learn at your pace.</b><br><span style="color:#68758b">Clear notes. Handy PDFs. Easy access.</span></p></div>
+  </div></section>
+
+  <section id="notes"><div class="wrap">
+    <h2>Featured study materials</h2>
+    <p class="section-intro">Choose a PDF to see its details and purchase securely.</p>
+    <div class="cards">
+      <article class="card"><span class="tag">PDF NOTES</span><h3>Study Notes — Subject 1</h3><p>Replace this with the subject, class or exam and a short, accurate description.</p><div class="price">₹ / $ —</div><a class="buy disabled" href="#" aria-disabled="true">Add Stripe link</a></article>
+      <article class="card"><span class="tag">REVISION GUIDE</span><h3>Quick Revision — Subject 2</h3><p>Describe the chapters covered, format and what the student will receive.</p><div class="price">₹ / $ —</div><a class="buy disabled" href="#" aria-disabled="true">Add Stripe link</a></article>
+      <article class="card"><span class="tag">PRACTICE PDF</span><h3>Practice Pack — Subject 3</h3><p>Describe the worksheets, questions or solutions included in this download.</p><div class="price">₹ / $ —</div><a class="buy disabled" href="#" aria-disabled="true">Add Stripe link</a></article>
+    </div>
+    <p class="notice">StudyKit plans to support INR (₹) and USD ($), subject to payment-provider and account availability. Demo catalogue: replace sample titles, descriptions and prices. Add a real Stripe Payment Link to each Buy button only after your Stripe account is approved and the product is configured.</p>
+  </div></section>
+
+  <section id="how" style="background:#f8faff"><div class="wrap">
+    <h2>How it works</h2><p class="section-intro">A simple path from choosing a resource to getting started.</p>
+    <div class="steps">
+      <div class="step"><b>01 · Browse</b><h3>Choose your PDF</h3><p>Review the subject, topics, format and price before purchasing.</p></div>
+      <div class="step"><b>02 · Checkout</b><h3>Pay securely</h3><p>Continue to the payment provider's hosted checkout page.</p></div>
+      <div class="step"><b>03 · Get access</b><h3>Receive your file</h3><p>Explain clearly how buyers receive the download after payment.</p></div>
+    </div>
+  </div></section>
+
+  <section id="about"><div class="wrap">
+    <h2>About StudyKit</h2>
+    <p class="lead">StudyKit is an independent learning resource store offering helpful study materials in easy-to-use PDF format. Add your real business background, the students you serve and how your materials are created.</p>
+  </div></section>
+
+  <section id="contact"><div class="wrap"><div class="contact">
+    <div><h2 style="color:white">Need help?</h2><p>Questions about a PDF or an order? Contact the StudyKit team.</p><p id="emailText">Email: chettrianmol2008@gmail.com</p></div>
+    <a class="btn" style="background:white;color:#2457d6" href="mailto:chettrianmol2008@gmail.com">Email us</a>
+  </div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> StudyKit. All rights reserved. <span style="float:right"><a href="#contact">Contact</a></span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
